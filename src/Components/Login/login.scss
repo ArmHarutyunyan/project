@@ -1,0 +1,119 @@
+.login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__inner {
+    width: 100%;
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(blue, .8);
+    padding: 3rem 3rem 2rem 3rem;
+    border-radius: 10px;
+
+    & img {
+        cursor: pointer;
+        filter: brightness(0) invert(1);
+    }
+}
+
+.login__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.input__item {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    position: relative;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.login__input {
+    width: 100%;
+    background: 0;
+    border: 0;
+    padding: 0;
+
+    border-bottom: 1px solid rgba(#fff, .5);
+    padding: .5rem 0;
+    color: rgba(#fff, .8);
+
+    &::placeholder {
+        color: rgba(#fff, .7);
+    }
+
+    &:focus {
+        outline: none;
+
+        & +.input__line {
+            width: 100%;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.input__line {
+    display: block;
+    width: 0%;
+    height: 1px;
+    background-color: rgba(blue, .8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: width .2s linear;
+}
+
+.login__btn {
+    background: 0;
+    border: 0;
+    padding: 0;
+
+    font-size: 1.3rem;
+    color: rgba(#121212, .8);
+    background-color: #fff;
+    padding: .5rem 2rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all .2s linear;
+
+    &:last-child {
+        margin-left: 2rem;
+    }
+}
+
+.login__wrong {
+    display: none;
+    word-wrap: break-word;
+    color: crimson;
+    text-align: left;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center; 
+}
+
+.change {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    color: red;
+}

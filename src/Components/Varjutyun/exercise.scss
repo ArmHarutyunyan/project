@@ -1,0 +1,40 @@
+.exer__form--text {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.exer__form {
+
+    & input {
+        margin-bottom: 2rem;
+    }
+
+    & button {
+        margin-bottom: 2rem;
+    }
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    & p {
+        font-size: 2rem;
+        margin-left: 2rem;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+
+    &:last-child {
+        margin-bottom: 4rem;
+    }
+}
+
+.mijin {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
